@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		44C6DCE325FD20300078E920 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6DCE225FD20300078E920 /* AppDelegate.swift */; };
 		44C6DCE525FD20300078E920 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6DCE425FD20300078E920 /* SceneDelegate.swift */; };
-		44C6DCE725FD20300078E920 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6DCE625FD20300078E920 /* ViewController.swift */; };
-		44C6DCEA25FD20300078E920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C6DCE825FD20300078E920 /* Main.storyboard */; };
 		44C6DCEC25FD20310078E920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44C6DCEB25FD20310078E920 /* Assets.xcassets */; };
 		44C6DCEF25FD20310078E920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C6DCED25FD20310078E920 /* LaunchScreen.storyboard */; };
+		44C6DD0A25FD27C70078E920 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6DD0925FD27C70078E920 /* WeatherViewController.swift */; };
+		44C6DD4525FD29AD0078E920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C6DD4425FD29AD0078E920 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		44C6DCDF25FD20300078E920 /* weatherics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C6DCDF25FD20300078E920 /* Weatherics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44C6DCE225FD20300078E920 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44C6DCE425FD20300078E920 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44C6DCE625FD20300078E920 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		44C6DCE925FD20300078E920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44C6DCEB25FD20310078E920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44C6DCEE25FD20310078E920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44C6DCF025FD20310078E920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44C6DD0925FD27C70078E920 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherViewController.swift; path = weatherics/Controller/WeatherViewController.swift; sourceTree = SOURCE_ROOT; };
+		44C6DD4425FD29AD0078E920 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 		44C6DCE025FD20300078E920 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44C6DCDF25FD20300078E920 /* weatherics.app */,
+				44C6DCDF25FD20300078E920 /* Weatherics.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +56,32 @@
 		44C6DCE125FD20300078E920 /* weatherics */ = {
 			isa = PBXGroup;
 			children = (
+				44C6DD4725FD29BA0078E920 /* View */,
+				44C6DCF825FD27390078E920 /* Controller */,
 				44C6DCE225FD20300078E920 /* AppDelegate.swift */,
 				44C6DCE425FD20300078E920 /* SceneDelegate.swift */,
-				44C6DCE625FD20300078E920 /* ViewController.swift */,
-				44C6DCE825FD20300078E920 /* Main.storyboard */,
 				44C6DCEB25FD20310078E920 /* Assets.xcassets */,
 				44C6DCED25FD20310078E920 /* LaunchScreen.storyboard */,
 				44C6DCF025FD20310078E920 /* Info.plist */,
 			);
 			path = weatherics;
+			sourceTree = "<group>";
+		};
+		44C6DCF825FD27390078E920 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				44C6DD0925FD27C70078E920 /* WeatherViewController.swift */,
+			);
+			name = Controller;
+			path = "../../../../../../Downloads/Clima-iOS13-master/Clima/Controller";
+			sourceTree = "<group>";
+		};
+		44C6DD4725FD29BA0078E920 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44C6DD4425FD29AD0078E920 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +101,7 @@
 			);
 			name = weatherics;
 			productName = weatherics;
-			productReference = 44C6DCDF25FD20300078E920 /* weatherics.app */;
+			productReference = 44C6DCDF25FD20300078E920 /* Weatherics.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -124,9 +141,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44C6DD4525FD29AD0078E920 /* Main.storyboard in Resources */,
 				44C6DCEF25FD20310078E920 /* LaunchScreen.storyboard in Resources */,
 				44C6DCEC25FD20310078E920 /* Assets.xcassets in Resources */,
-				44C6DCEA25FD20300078E920 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44C6DCE725FD20300078E920 /* ViewController.swift in Sources */,
 				44C6DCE325FD20300078E920 /* AppDelegate.swift in Sources */,
+				44C6DD0A25FD27C70078E920 /* WeatherViewController.swift in Sources */,
 				44C6DCE525FD20300078E920 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		44C6DCE825FD20300078E920 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44C6DCE925FD20300078E920 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		44C6DCED25FD20310078E920 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +303,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.yusasarisoy.weatherics;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Weatherics;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,7 +322,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.yusasarisoy.weatherics;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Weatherics;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
